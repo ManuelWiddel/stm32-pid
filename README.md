@@ -156,7 +156,8 @@ When the controller output is saturated, integration is only allowed if the accu
 - Uses derivative-on-measurement
 - Prevents derivative kick
 - Assumes a fixed sample period (Ts)
-- Update function must be called periodically
+
+The controller assumes a fixed sampling period. The update function must be called periodically at the configured sample time Ts. Irregular update intervals will affect controller performance.
 
 ---
 
